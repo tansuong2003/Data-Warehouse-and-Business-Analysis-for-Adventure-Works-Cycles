@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<DataProfile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources>
+    <DtsDataSource ID="{AAF5727C-EC73-473D-B0DA-E05A15CD9FE6}" Name="dataProfile.xml">
+      <DtsConnectionManagerID>dataProfile.xml</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{6A62182C-0238-42F9-8125-10528A2B2C21}" Name="LAPTOP-828J853G_SQLEXPRESS.AWP">
+      <DtsConnectionManagerID>LAPTOP-828J853G_SQLEXPRESS.AWP</DtsConnectionManagerID>
+    </DtsDataSource>
+  </DataSources>
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests />
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles />
+  </DataProfileOutput>
+</DataProfile>

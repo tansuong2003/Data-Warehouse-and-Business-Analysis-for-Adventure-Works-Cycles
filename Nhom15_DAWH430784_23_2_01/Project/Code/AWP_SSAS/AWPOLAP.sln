@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1382
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "AWPOLAP", "AWPOLAP\AWPOLAP.dwproj", "{AF346E4E-4079-42E7-BED8-34D79F6434C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF346E4E-4079-42E7-BED8-34D79F6434C6}.Development|Default.ActiveCfg = Development
+		{AF346E4E-4079-42E7-BED8-34D79F6434C6}.Development|Default.Build.0 = Development
+		{AF346E4E-4079-42E7-BED8-34D79F6434C6}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0ADD901E-2CC7-43E2-9B98-23B2E2B5D2E1}
+	EndGlobalSection
+EndGlobal
