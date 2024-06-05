@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LAPTOP-828J853G_SQLEXPRESS.AWP"
+  DTS:DTSID="{6A62182C-0238-42F9-8125-10528A2B2C21}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=LAPTOP-828J853G\SQLEXPRESS;Initial Catalog=AWP;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-{6A62182C-0238-42F9-8125-10528A2B2C21}LAPTOP-828J853G_SQLEXPRESS.AWP;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

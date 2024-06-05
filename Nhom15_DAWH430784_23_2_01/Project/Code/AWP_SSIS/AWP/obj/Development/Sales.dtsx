@@ -1,0 +1,2099 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/15/2022 6:54:37 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-5H6628A"
+  DTS:CreatorName="DESKTOP-5H6628A\Maciej"
+  DTS:DTSID="{8E34E58E-9AD3-42CE-8873-23B3C126BB7A}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Sales"
+  DTS:PackageType="5"
+  DTS:VersionBuild="43"
+  DTS:VersionGUID="{07219F6F-244F-498F-8E28-70CAC236A4AC}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Sale2015]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F6131E99-4995-4F20-B1D1-910806FE44B4}"
+      DTS:ObjectName="Sale2015">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\21133078_NguyenTanSuong\DATA WAREHOUSE _ THẦY THÀNH\AWP_SSIS-master\data\SalesData\AdventureWorks_Sales_2015.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderDate"
+              DTS:DTSID="{AEDA7383-78EB-448B-9FC6-4AC1213CE830}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StockDate"
+              DTS:DTSID="{0B62662E-D488-4589-B1A0-ED5B408C3929}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderNumber"
+              DTS:DTSID="{DDEA2943-5DDA-4792-89E3-4E1DC1F4DC61}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductKey"
+              DTS:DTSID="{73E97A96-D134-4FAE-A7E2-6ABB2ED40E05}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerKey"
+              DTS:DTSID="{6386CA0F-BB8E-4A36-92BE-E2ADAD4E9303}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TerritoryKey"
+              DTS:DTSID="{BFECCADD-FDD5-45F5-9C58-DE8E25558831}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderLineItem"
+              DTS:DTSID="{DE649069-141E-4EB7-8352-F87E74F57DAF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderQuantity"
+              DTS:DTSID="{E32F380C-72F6-4557-ACF5-C28543DE053B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Sale2016]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{56F1E2D0-AB77-4550-AE5D-D306B37706CD}"
+      DTS:ObjectName="Sale2016">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\21133078_NguyenTanSuong\DATA WAREHOUSE _ THẦY THÀNH\AWP_SSIS-master\data\SalesData\AdventureWorks_Sales_2016.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderDate"
+              DTS:DTSID="{9CBAAC44-1596-4265-9505-9B1F907E895D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StockDate"
+              DTS:DTSID="{8BCA43CA-62AA-4622-8C99-A47128F7EC6D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderNumber"
+              DTS:DTSID="{C9B75D4B-644A-454F-8781-BA9EC1F422BE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductKey"
+              DTS:DTSID="{B641D494-1EF8-4281-9154-4C337AE8D35E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerKey"
+              DTS:DTSID="{CD6D8386-D62F-496A-8FE6-B0BDD4E0B79B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TerritoryKey"
+              DTS:DTSID="{9A5E9CB5-BD30-406B-B392-4FF605CF10CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderLineItem"
+              DTS:DTSID="{FB160204-A777-4818-898F-BCA0B32E4985}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderQuantity"
+              DTS:DTSID="{C7354621-3FB2-4584-862A-F3C676AED59F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Sale2017]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C75CFE1B-C22B-4C82-804E-AEF4ECB3D547}"
+      DTS:ObjectName="Sale2017">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\21133078_NguyenTanSuong\DATA WAREHOUSE _ THẦY THÀNH\AWP_SSIS-master\data\SalesData\AdventureWorks_Sales_2017.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderDate"
+              DTS:DTSID="{2503062D-E01D-4734-8B4E-E74099013034}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StockDate"
+              DTS:DTSID="{95DD36EF-5A59-4EA8-A6F3-7E40E6780CAA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderNumber"
+              DTS:DTSID="{7678E19A-5113-451C-9A61-11153EC18F5A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductKey"
+              DTS:DTSID="{0FDAD52B-F77A-425B-8C5E-1E38723F5B54}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerKey"
+              DTS:DTSID="{82E35E39-5AF4-4B22-B66B-F16854AA8C10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TerritoryKey"
+              DTS:DTSID="{14BD7776-2EB2-4851-BB48-751AC8ECA036}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderLineItem"
+              DTS:DTSID="{6080D937-85FD-409C-BADA-36B0D7DDBB12}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderQuantity"
+              DTS:DTSID="{AE1AE79D-6B6C-4AD4-8651-B42B2AF1B88D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4AF8F1A2-800D-4F8D-A6CD-663BBDCF80A8}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="vNoRows">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Load Sales"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{1510E1C0-7EFD-4376-B4F8-80382B284E15}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load Sales">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Load Sales\DFT_LoadSales"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{30728D4D-75AF-4CF4-AA8F-6F87678EDE8E}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT_LoadSales"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="FFS_Sales_2015"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Sale2015]"
+                      connectionManagerRefId="Package.ConnectionManagers[Sale2015]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[OrderDate]"
+                          dataType="date"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[OrderDate]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[OrderDate]"
+                          name="OrderDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[StockDate]"
+                          dataType="date"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[StockDate]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[StockDate]"
+                          name="StockDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[OrderNumber]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[OrderNumber]"
+                          length="50"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[OrderNumber]"
+                          name="OrderNumber"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[ProductKey]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[ProductKey]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[ProductKey]"
+                          name="ProductKey"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[CustomerKey]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[CustomerKey]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[CustomerKey]"
+                          name="CustomerKey"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[TerritoryKey]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[TerritoryKey]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[TerritoryKey]"
+                          name="TerritoryKey"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[OrderLineItem]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[OrderLineItem]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[OrderLineItem]"
+                          name="OrderLineItem"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[OrderQuantity]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[OrderQuantity]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[OrderQuantity]"
+                          name="OrderQuantity"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[OrderDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OrderDate" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[StockDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="StockDate" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[OrderNumber]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OrderNumber" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[ProductKey]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProductKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[CustomerKey]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CustomerKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[TerritoryKey]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TerritoryKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[OrderLineItem]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OrderLineItem" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].ExternalColumns[OrderQuantity]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OrderQuantity" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1250"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="FFS_Sales_2016"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Sale2016]"
+                      connectionManagerRefId="Package.ConnectionManagers[Sale2016]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[OrderDate]"
+                          dataType="date"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[OrderDate]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[OrderDate]"
+                          name="OrderDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[StockDate]"
+                          dataType="date"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[StockDate]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[StockDate]"
+                          name="StockDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[OrderNumber]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[OrderNumber]"
+                          length="50"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[OrderNumber]"
+                          name="OrderNumber"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[ProductKey]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[ProductKey]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[ProductKey]"
+                          name="ProductKey"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[CustomerKey]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[CustomerKey]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[CustomerKey]"
+                          name="CustomerKey"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[TerritoryKey]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[TerritoryKey]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[TerritoryKey]"
+                          name="TerritoryKey"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[OrderLineItem]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[OrderLineItem]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[OrderLineItem]"
+                          name="OrderLineItem"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[OrderQuantity]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[OrderQuantity]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[OrderQuantity]"
+                          name="OrderQuantity"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[OrderDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OrderDate" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[StockDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="StockDate" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[OrderNumber]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OrderNumber" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[ProductKey]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProductKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[CustomerKey]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CustomerKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[TerritoryKey]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TerritoryKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[OrderLineItem]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OrderLineItem" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].ExternalColumns[OrderQuantity]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OrderQuantity" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1250"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="FFS_Sales_2017"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Sale2017]"
+                      connectionManagerRefId="Package.ConnectionManagers[Sale2017]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[OrderDate]"
+                          dataType="date"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[OrderDate]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[OrderDate]"
+                          name="OrderDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[StockDate]"
+                          dataType="date"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[StockDate]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[StockDate]"
+                          name="StockDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[OrderNumber]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[OrderNumber]"
+                          length="50"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[OrderNumber]"
+                          name="OrderNumber"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[ProductKey]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[ProductKey]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[ProductKey]"
+                          name="ProductKey"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[CustomerKey]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[CustomerKey]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[CustomerKey]"
+                          name="CustomerKey"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[TerritoryKey]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[TerritoryKey]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[TerritoryKey]"
+                          name="TerritoryKey"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[OrderLineItem]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[OrderLineItem]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[OrderLineItem]"
+                          name="OrderLineItem"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[OrderQuantity]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[OrderQuantity]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[OrderQuantity]"
+                          name="OrderQuantity"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[OrderDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OrderDate" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[StockDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="StockDate" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[OrderNumber]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OrderNumber" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[ProductKey]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProductKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[CustomerKey]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CustomerKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[TerritoryKey]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TerritoryKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[OrderLineItem]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OrderLineItem" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].ExternalColumns[OrderQuantity]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OrderQuantity" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1250"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Load Sales\DFT_LoadSales\OLE_Sales"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE_Sales"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[Sales]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Connections[OleDbConnection]"
+                      connectionManagerID="{6A62182C-0238-42F9-8125-10528A2B2C21}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[LAPTOP-828J853G_SQLEXPRESS.AWP]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].Columns[OrderDate]"
+                          cachedDataType="date"
+                          cachedName="OrderDate"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[OrderDate]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderDate]" />
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].Columns[StockDate]"
+                          cachedDataType="date"
+                          cachedName="StockDate"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[StockDate]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[StockDate]" />
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].Columns[OrderNumber]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="OrderNumber"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[OrderNumber]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderNumber]" />
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].Columns[ProductKey]"
+                          cachedDataType="i4"
+                          cachedName="ProductKey"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[ProductKey]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[ProductKey]" />
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].Columns[CustomerKey]"
+                          cachedDataType="i4"
+                          cachedName="CustomerKey"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[CustomerKey]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[CustomerKey]" />
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].Columns[TerritoryKey]"
+                          cachedDataType="i4"
+                          cachedName="TerritoryKey"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[TerritoryKey]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[TerritoryKey]" />
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].Columns[OrderLineItem]"
+                          cachedDataType="i4"
+                          cachedName="OrderLineItem"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[OrderLineItem]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderLineItem]" />
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].Columns[OrderQuantity]"
+                          cachedDataType="i4"
+                          cachedName="OrderQuantity"
+                          externalMetadataColumnId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[OrderQuantity]"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderQuantity]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[OrderDate]"
+                          dataType="dbTimeStamp"
+                          name="OrderDate" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[StockDate]"
+                          dataType="dbTimeStamp"
+                          name="StockDate" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[OrderNumber]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OrderNumber" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[ProductKey]"
+                          dataType="i4"
+                          name="ProductKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[CustomerKey]"
+                          dataType="i4"
+                          name="CustomerKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[TerritoryKey]"
+                          dataType="i4"
+                          name="TerritoryKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[OrderLineItem]"
+                          dataType="i4"
+                          name="OrderLineItem" />
+                        <externalMetadataColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input].ExternalColumns[OrderQuantity]"
+                          dataType="i4"
+                          name="OrderQuantity" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Load Sales\DFT_LoadSales\Row Count"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                  name="Row Count">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::vNoRows</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Load Sales\DFT_LoadSales\Row Count.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Load Sales\DFT_LoadSales\Row Count.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\Load Sales\DFT_LoadSales\Row Count.Inputs[Row Count Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Load Sales\DFT_LoadSales\Union All"
+                  componentClassID="Microsoft.UnionAll"
+                  contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+                  name="Union All"
+                  version="1">
+                  <inputs>
+                    <input
+                      refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 1]"
+                      name="Union All Input 1">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 1].Columns[OrderDate]"
+                          cachedDataType="date"
+                          cachedName="OrderDate"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[OrderDate]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderDate]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 1].Columns[StockDate]"
+                          cachedDataType="date"
+                          cachedName="StockDate"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[StockDate]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[StockDate]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 1].Columns[OrderNumber]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="OrderNumber"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[OrderNumber]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderNumber]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 1].Columns[ProductKey]"
+                          cachedDataType="i4"
+                          cachedName="ProductKey"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[ProductKey]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[ProductKey]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 1].Columns[CustomerKey]"
+                          cachedDataType="i4"
+                          cachedName="CustomerKey"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[CustomerKey]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[CustomerKey]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 1].Columns[TerritoryKey]"
+                          cachedDataType="i4"
+                          cachedName="TerritoryKey"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[TerritoryKey]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[TerritoryKey]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 1].Columns[OrderLineItem]"
+                          cachedDataType="i4"
+                          cachedName="OrderLineItem"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[OrderLineItem]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderLineItem]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 1].Columns[OrderQuantity]"
+                          cachedDataType="i4"
+                          cachedName="OrderQuantity"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output].Columns[OrderQuantity]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderQuantity]}</property>
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                    <input
+                      refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 2]"
+                      hasSideEffects="true"
+                      name="Union All Input 2">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 2].Columns[OrderDate]"
+                          cachedDataType="date"
+                          cachedName="OrderDate"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[OrderDate]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderDate]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 2].Columns[StockDate]"
+                          cachedDataType="date"
+                          cachedName="StockDate"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[StockDate]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[StockDate]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 2].Columns[OrderNumber]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="OrderNumber"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[OrderNumber]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderNumber]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 2].Columns[ProductKey]"
+                          cachedDataType="i4"
+                          cachedName="ProductKey"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[ProductKey]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[ProductKey]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 2].Columns[CustomerKey]"
+                          cachedDataType="i4"
+                          cachedName="CustomerKey"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[CustomerKey]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[CustomerKey]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 2].Columns[TerritoryKey]"
+                          cachedDataType="i4"
+                          cachedName="TerritoryKey"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[TerritoryKey]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[TerritoryKey]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 2].Columns[OrderLineItem]"
+                          cachedDataType="i4"
+                          cachedName="OrderLineItem"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[OrderLineItem]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderLineItem]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 2].Columns[OrderQuantity]"
+                          cachedDataType="i4"
+                          cachedName="OrderQuantity"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output].Columns[OrderQuantity]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderQuantity]}</property>
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                    <input
+                      refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 3]"
+                      hasSideEffects="true"
+                      name="Union All Input 3">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 3].Columns[OrderDate]"
+                          cachedDataType="date"
+                          cachedName="OrderDate"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[OrderDate]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderDate]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 3].Columns[StockDate]"
+                          cachedDataType="date"
+                          cachedName="StockDate"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[StockDate]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[StockDate]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 3].Columns[OrderNumber]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="OrderNumber"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[OrderNumber]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderNumber]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 3].Columns[ProductKey]"
+                          cachedDataType="i4"
+                          cachedName="ProductKey"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[ProductKey]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[ProductKey]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 3].Columns[CustomerKey]"
+                          cachedDataType="i4"
+                          cachedName="CustomerKey"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[CustomerKey]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[CustomerKey]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 3].Columns[TerritoryKey]"
+                          cachedDataType="i4"
+                          cachedName="TerritoryKey"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[TerritoryKey]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[TerritoryKey]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 3].Columns[OrderLineItem]"
+                          cachedDataType="i4"
+                          cachedName="OrderLineItem"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[OrderLineItem]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderLineItem]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 3].Columns[OrderQuantity]"
+                          cachedDataType="i4"
+                          cachedName="OrderQuantity"
+                          lineageId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output].Columns[OrderQuantity]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderQuantity]}</property>
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                    <input
+                      refId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 4]"
+                      dangling="true"
+                      hasSideEffects="true"
+                      name="Union All Input 4">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1]"
+                      name="Union All Output 1">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderDate]"
+                          dataType="date"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderDate]"
+                          name="OrderDate" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[StockDate]"
+                          dataType="date"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[StockDate]"
+                          name="StockDate" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderNumber]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderNumber]"
+                          name="OrderNumber" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[ProductKey]"
+                          dataType="i4"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[ProductKey]"
+                          name="ProductKey" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[CustomerKey]"
+                          dataType="i4"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[CustomerKey]"
+                          name="CustomerKey" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[TerritoryKey]"
+                          dataType="i4"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[TerritoryKey]"
+                          name="TerritoryKey" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderLineItem]"
+                          dataType="i4"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderLineItem]"
+                          name="OrderLineItem" />
+                        <outputColumn
+                          refId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderQuantity]"
+                          dataType="i4"
+                          lineageId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1].Columns[OrderQuantity]"
+                          name="OrderQuantity" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Load Sales\DFT_LoadSales.Paths[Flat File Source Output]"
+                  endId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 1]"
+                  name="Flat File Source Output"
+                  startId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015.Outputs[Flat File Source Output]" />
+                <path
+                  refId="Package\Load Sales\DFT_LoadSales.Paths[Flat File Source Output1]"
+                  endId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 2]"
+                  name="Flat File Source Output"
+                  startId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016.Outputs[Flat File Source Output]" />
+                <path
+                  refId="Package\Load Sales\DFT_LoadSales.Paths[Flat File Source Output2]"
+                  endId="Package\Load Sales\DFT_LoadSales\Union All.Inputs[Union All Input 3]"
+                  name="Flat File Source Output"
+                  startId="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017.Outputs[Flat File Source Output]" />
+                <path
+                  refId="Package\Load Sales\DFT_LoadSales.Paths[Row Count Output 1]"
+                  endId="Package\Load Sales\DFT_LoadSales\OLE_Sales.Inputs[OLE DB Destination Input]"
+                  name="Row Count Output 1"
+                  startId="Package\Load Sales\DFT_LoadSales\Row Count.Outputs[Row Count Output 1]" />
+                <path
+                  refId="Package\Load Sales\DFT_LoadSales.Paths[Union All Output 1]"
+                  endId="Package\Load Sales\DFT_LoadSales\Row Count.Inputs[Row Count Input 1]"
+                  name="Union All Output 1"
+                  startId="Package\Load Sales\DFT_LoadSales\Union All.Outputs[Union All Output 1]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Load Sales\TRN_Sales"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{3FA92B60-192C-4B77-866C-161093A16D51}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="TRN_Sales"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{6A62182C-0238-42F9-8125-10528A2B2C21}"
+              SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.Sales" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Load Sales.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{E00BE8AA-655D-46B6-89E8-D86A1C2CF31F}"
+          DTS:From="Package\Load Sales\TRN_Sales"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Load Sales\DFT_LoadSales" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150.666666666667,42"
+          Id="Package\Load Sales\DFT_LoadSales"
+          TopLeft="55,120" />
+        <NodeLayout
+          Size="129.333333333334,42"
+          Id="Package\Load Sales\TRN_Sales"
+          TopLeft="69,23" />
+        <EdgeLayout
+          Id="Package\Load Sales.PrecedenceConstraints[Constraint 1]"
+          TopLeft="132,65">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55"
+              Start="0,0"
+              End="0,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="280,310.666666666667"
+          Size="280,354"
+          Id="Package\Load Sales"
+          TopLeft="140,76" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load Sales\DFT_LoadSales">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="154.666666666667,42"
+          Id="Package\Load Sales\DFT_LoadSales\FFS_Sales_2017"
+          TopLeft="458,79" />
+        <NodeLayout
+          Size="162.666666666667,42.6666666666667"
+          Id="Package\Load Sales\DFT_LoadSales\FFS_Sales_2016"
+          TopLeft="235.500000111759,77" />
+        <NodeLayout
+          Size="133.333333333334,42.6666666666667"
+          Id="Package\Load Sales\DFT_LoadSales\OLE_Sales"
+          TopLeft="249,374" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Load Sales\DFT_LoadSales\Row Count"
+          TopLeft="249,296" />
+        <NodeLayout
+          Size="162.666666666667,42.6666666666667"
+          Id="Package\Load Sales\DFT_LoadSales\FFS_Sales_2015"
+          TopLeft="29,77" />
+        <EdgeLayout
+          Id="Package\Load Sales\DFT_LoadSales.Paths[Row Count Output 1]"
+          TopLeft="314.833333333333,338">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36"
+              Start="0,0"
+              End="0,28.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="122.666666666667,42.6666666666667"
+          Id="Package\Load Sales\DFT_LoadSales\Union All"
+          TopLeft="263.749988209457,205.421052023067" />
+        <EdgeLayout
+          Id="Package\Load Sales\DFT_LoadSales.Paths[Flat File Source Output]"
+          TopLeft="110.333333333333,119.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="214.749988209457,85.7543853564001"
+              Start="0,0"
+              End="214.749988209457,78.2543853564001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.8771926782" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.8771926782"
+                    Point2="0,42.8771926782"
+                    Point3="4,42.8771926782" />
+                  <mssgle:LineSegment
+                    End="210.749988209457,42.8771926782" />
+                  <mssgle:CubicBezierSegment
+                    Point1="210.749988209457,42.8771926782"
+                    Point2="214.749988209457,42.8771926782"
+                    Point3="214.749988209457,46.8771926782" />
+                  <mssgle:LineSegment
+                    End="214.749988209457,78.2543853564001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Sales\DFT_LoadSales.Paths[Flat File Source Output1]"
+          TopLeft="316.833333445092,119.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.23610001905962,85.7543853564001"
+              Start="0,0"
+              End="9.23610001905962,78.2543853564001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.790150983619" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,46.790150983619"
+                    Point2="0,50.790150983619"
+                    Point3="4,50.790150983619" />
+                  <mssgle:LineSegment
+                    End="5.23610001905962,50.790150983619" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.23610001905962,50.790150983619"
+                    Point2="9.23610001905962,50.790150983619"
+                    Point3="9.23610001905962,54.790150983619" />
+                  <mssgle:LineSegment
+                    End="9.23610001905962,78.2543853564001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Sales\DFT_LoadSales.Paths[Flat File Source Output2]"
+          TopLeft="535.333333333333,121">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-181.583345123877,84.4210520230667"
+              Start="0,0"
+              End="-181.583345123877,76.9210520230667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.0832396178875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,51.0832396178875"
+                    Point2="0,55.0832396178875"
+                    Point3="-4,55.0832396178875" />
+                  <mssgle:LineSegment
+                    End="-177.583345123877,55.0832396178875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-177.583345123877,55.0832396178875"
+                    Point2="-181.583345123877,55.0832396178875"
+                    Point3="-181.583345123877,59.0832396178875" />
+                  <mssgle:LineSegment
+                    End="-181.583345123877,76.9210520230667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Sales\DFT_LoadSales.Paths[Union All Output 1]"
+          TopLeft="325.08332154279,248.087718689733">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-11.0833215427899,47.9122813102666"
+              Start="0,0"
+              End="-11.0833215427899,40.4122813102666">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.9561406551333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.9561406551333"
+                    Point2="0,23.9561406551333"
+                    Point3="-4,23.9561406551333" />
+                  <mssgle:LineSegment
+                    End="-7.08332154278992,23.9561406551333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-7.08332154278992,23.9561406551333"
+                    Point2="-11.0833215427899,23.9561406551333"
+                    Point3="-11.0833215427899,27.9561406551333" />
+                  <mssgle:LineSegment
+                    End="-11.0833215427899,40.4122813102666" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Sales\DFT_LoadSales\OLE_Sales">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
