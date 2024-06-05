@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="LoadRAWDataToStagingDb"
   DTS:PackageType="5"
-  DTS:VersionBuild="38"
-  DTS:VersionGUID="{93E2C4E9-EBEC-4658-A192-3DCB0136FC0E}">
+  DTS:VersionBuild="39"
+  DTS:VersionGUID="{BF85691A-EE9E-4AD5-9745-BFB2B74C77E3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -213,8 +213,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="490,433.333333333334"
-          Size="490,476"
+          PanelSize="450.666666666667,386"
+          Size="450.666666666667,429.333333333334"
           Id="Package\LoadRAWData"
           TopLeft="63,140" />
       </GraphLayout>
